@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.contentContainer {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.imageContainer {
+    width: 40vw;
+}
+
+.formContainer {
+    width: 60vw;
+}
+
+.imageContainer img {
+    margin-top: 75px;
+    margin-right: 170px;
+    width: 435px;
+}
+
+.highlight {
+    width: 434px;
+    height: 18px;
+    background-color: #FDBD03;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.whatsappIcon {
+    position: absolute;
+    left: 80px;
+    top: 30px;
+    background-color: #FDBD03;
+    border-radius: 50%;
+    padding: 10px;
+    width: 60px;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    justify-content: center;
+    margin-right: 88px;
+}
+
+.formHeader h1 {
+    font-size: 66px;
+    color: #FDBD03;
+}
+
+.formHeader p {
+    font-size: 20px;
+    color: #020253;
+    width: 320px;
+    margin-top: 20px;
+}
+
+.formHeader {
+    margin-bottom: 30px;
+    direction: rtl;
+}
+
+.formSection {
+    direction: rtl;
+}
+
+.formSection label {
+    display: block;
+}
+
+.inputGroup {
+    display: flex;
+    gap: 10px;
+}
+
+.inputGroup input {
+    width: 300px;
+    height: 37px;
+    background-color: #E5EEFF;
+    border: none;
+    border-bottom: 4px solid #FDBD03;
+}
+
+.textareaContainer {
+    margin-top: 5px;
+}
+
+.textareaContainer textarea {
+    width: 610px;
+    height: 140px;
+    background-color: #E5EEFF;
+    border: none;
+    border-bottom: 4px solid #FDBD03;
+}
+
+.submitButton {
+    width: 166px;
+    height: 50px;
+    margin-top: 50px;
+    background-color: #FDBD03;
+    border: none;
+    font-size: 22px;
+}
+
+.footer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 56vw;
+}
+
+.socialIconsContainer {
+    width: 500px;
+    margin-bottom: 50px;
+    margin-left: 30px;
+}
+
+.socialIcons {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.socialIcons img {
+    width: 60px;
+    background-color: #FDBD03;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.highlightBottom {
+    position: absolute;
+    width: 56vw;
+    height: 18px;
+    background-color: #FDBD03;
+    left: 0;
+    bottom: 0;
+}
+
+textarea {
+    resize: none;
+}
+
+@media (max-width: 576px) {
+    .mainContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .contentContainer {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .highlight {
+        width: 90vw;
+    }
+
+    .whatsappIcon {
+        display: none;
+    }
+
+    .imageContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 30vh;
+    }
+
+    .imageContainer img {
+        width: 90px;
+        height: 100px;
+        margin-top: 0;
+        margin-right: 0;
+    }
+
+    .formContainer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 50vh;
+    }
+
+    .formHeader h1 {
+        text-align: center;
+        font-size: 3rem;
+    }
+
+    .formHeader p {
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    .inputGroup {
+        flex-direction: column;
+    }
+
+    .textareaContainer {
+        flex-direction: column;
+    }
+
+    .textareaContainer textarea {
+        width: 300px;
+    }
+
+    .submitButton {
+        width: 300px;
+        margin-top: 10px;
+    }
+
+    .footer {
+        width: 100vw;
+        height: 10vh;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    .socialIcons {
+        justify-content: center;
+    }
+
+    .socialIconsContainer {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .socialIcons img {
+        width: 45px;
+        padding: 9px;
+        margin: 19px;
+    }
+
+    .highlightBottom {
+        width: 100vw;
+    }
+}
+
+@media (max-width: 375px) {
+    .formHeader h1 {
+        font-size: 2.5rem;
+    }
+
+    .formHeader p {
+        font-size: 0.875rem;
+        width: 90%;
+    }
+
+    .inputGroup input,
+    .textareaContainer textarea {
+        width: 280px;
+    }
+
+    .submitButton {
+        width: 280px;
+    }
+
+    .socialIcons img {
+        width: 50px;
+        padding: 12px;
+        margin: 22px;
+    }
+}
