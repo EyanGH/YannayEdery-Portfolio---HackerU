@@ -1,5 +1,5 @@
 
-//
+
 $(document).ready(function() {
 			$('#fullpage').fullpage({
 				'verticalCentered': false,
@@ -11,9 +11,10 @@ $(document).ready(function() {
 			});
 		});
 
-// wow
+
 $(function()
 {
     new WOW().init();
     $(".rotate").textrotator();
 })
+

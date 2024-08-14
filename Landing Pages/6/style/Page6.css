@@ -159,6 +159,9 @@ textarea {
         align-items: center;
     }
 
+
+
+
     .contentContainer {
         width: 100%;
         flex-direction: column;
@@ -269,8 +272,8 @@ textarea {
     }
 
     .socialIcons img {
-        width: 50px;
-        padding: 12px;
-        margin: 22px;
+        width: 45px;
+        padding: 7px;
+        margin: 24px;
     }
 }

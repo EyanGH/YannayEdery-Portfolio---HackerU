@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management System</title>
+    <link rel="stylesheet" href="admin.css"> 
+</head>
+
+<body>
+    <header>
+        <h1>User Management System</h1>
+    </header>
+    <main>
+        <section id="add-user">
+            <h2>Add New User</h2>
+            <form id="addUserForm">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="role">Role:</label>
+                <select id="role" name="role">
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                </select>
+
+                <button type="submit">Add User</button>
+            </form>
+        </section>
+
+        <section id="user-list">
+            <h2>User List</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Username</th>
+                        <th>Email</th>
+                        <th>Role</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- User rows will be populated here -->
+                </tbody>
+            </table>
+        </section>
+
+        <section id="edit-user">
+            <h2>Edit User</h2>
+            <form id="editUserForm">
+                <label for="edit-username">Username:</label>
+                <input type="text" id="edit-username" name="edit-username" required>
+
+                <label for="edit-email">Email:</label>
+                <input type="email" id="edit-email" name="edit-email" required>
+
+                <label for="edit-role">Role:</label>
+                <select id="edit-role" name="edit-role">
+                    <option value="admin">Admin</option>
+                    <option value="user">User</option>
+                </select>
+
+                <button type="submit">Update User</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; User Management System</p>
+    </footer>
+
+    <script src="admin.js"></script> 
+</body>
+
+</html>

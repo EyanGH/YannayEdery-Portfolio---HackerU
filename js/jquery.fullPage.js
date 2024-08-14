@@ -94,8 +94,8 @@
             //scrolling
             css3: true,
             scrollingSpeed: 700,
-            autoScrolling: true,
-            fitToSection: true,
+            autoScrolling: false,
+            fitToSection: false,
             easing: 'easeInOutCubic',
             easingcss3: 'ease',
             loopBottom: false,
@@ -103,7 +103,7 @@
             loopHorizontal: true,
             continuousVertical: false,
             normalScrollElements: null,
-            scrollOverflow: false,
+            scrollOverflow: true,
             touchSensitivity: 5,
             normalScrollElementTouchThreshold: 5,
 
@@ -648,7 +648,7 @@
             if(!options.autoScrolling || options.scrollBar){
                 var currentScroll = $window.scrollTop();
                 var visibleSectionIndex = 0;
-                var initial = Math.abs(currentScroll - document.querySelectorAll(SECTION_SEL)[0].offsetTop);
+                // var initial = Math.abs(currentScroll - document.querySelectorAll(SECTION_SEL)[0].offsetTop);
 
                 //taking the section which is showing more content in the viewport
                 var sections =  document.querySelectorAll(SECTION_SEL);

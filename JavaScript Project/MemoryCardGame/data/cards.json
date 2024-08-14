@@ -1,0 +1,38 @@
+[
+    {
+        "image": "/JavaScript Project/MemoryCardGame/images/chili.png",
+        "name": "chili"
+    },
+    {
+        "image": "/JavaScript Project/MemoryCardGame/images/grapes.png",
+        "name": "grapes"
+    },
+    {
+        "image": "/JavaScript Project/MemoryCardGame/images/lemon.png",
+        "name": "lemon"
+    },
+    {
+        "image": "/JavaScript Project/MemoryCardGame/images/orange.png",
+        "name": "orange"
+    },
+    {
+        "image": "/JavaScript Project/MemoryCardGame/images/pineapple.png",
+        "name": "pineapple"
+    },
+    {
+        "image": "/JavaScript Project/MemoryCardGame/images/strawberry.png",
+        "name": "strawberry"
+    },
+    {
+        "image": "/JavaScript Project/MemoryCardGame/images/tomato.png",
+        "name": "tomato"
+    },
+    {
+        "image": "/JavaScript Project/MemoryCardGame/images/watermelon.png",
+        "name": "watermelon"
+    },
+    {
+        "image": "/JavaScript Project/MemoryCardGame/images/cherries.png",
+        "name": "cherries"
+    }
+]

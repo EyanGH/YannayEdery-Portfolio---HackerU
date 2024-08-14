@@ -1,0 +1,126 @@
+:root {
+    --font-family: 'Roboto', sans-serif;
+    --background-color: #f4f4f4;
+    --primary-color: #3498db;
+    --secondary-color: #e74c3c;
+    --accent-color: #f39c12;
+    --text-color: #333;
+    --border-radius: 12px;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --container-width: 90%;
+    --max-container-width: 600px;
+    --transition-duration: 0.3s;
+}
+
+body {
+    font-family: var(--font-family);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    background-color: var(--background-color);
+}
+
+h1 {
+    color: var(--primary-color);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+#store,
+#cart {
+    background-color: white;
+    padding: 25px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    width: var(--container-width);
+    max-width: var(--max-container-width);
+    margin: 20px 0;
+    transition: transform var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+#store:hover,
+#cart:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
+}
+
+.product {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ccc;
+    padding: 15px 0;
+    transition: background-color var(--transition-duration);
+}
+
+.product:hover {
+    background-color: #f9f9f9;
+}
+
+.product:last-child {
+    border-bottom: none;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 16px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-duration), transform var(--transition-duration), box-shadow var(--transition-duration);
+}
+
+button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: none;
+}
+
+button.add-to-cart {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+button.clear-cart {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+button.add-to-cart:hover {
+    background-color: darken(var(--primary-color), 10%);
+}
+
+button.clear-cart:hover {
+    background-color: darken(var(--secondary-color), 10%);
+}
+
+#cart-items {
+    margin: 20px 0;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: var(--border-radius);
+}
+
+#cart-total {
+    font-weight: bold;
+    margin: 20px 0;
+    font-size: 1.2rem;
+    color: var(--accent-color);
+}
+
+@media (max-width: 768px) {
+
+    #store,
+    #cart {
+        width: 100%;
+    }
+}

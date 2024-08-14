@@ -1,0 +1,101 @@
+/* Root Variables for Easy Theming */
+:root {
+    --font-family: 'Poppins', sans-serif;
+    --background-color: #f4f4f4;
+    --primary-color: #1abc9c;
+    --secondary-color: #e74c3c;
+    --text-color: #333;
+    --border-radius: 10px;
+    --box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    --container-width: 90%;
+    --max-container-width: 400px;
+}
+
+/* Global Styles */
+body {
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: var(--background-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 0;
+    padding: 0;
+}
+
+#game-container {
+    background-color: white;
+    padding: 30px;
+    border-radius: var(--border-radius);
+    box-shadow: var(--box-shadow);
+    text-align: center;
+    width: var(--container-width);
+    max-width: var(--max-container-width);
+}
+
+#question {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+#answer {
+    font-size: 18px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 2px solid var(--primary-color);
+    border-radius: var(--border-radius);
+    width: calc(100% - 24px);
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+button:hover {
+    transform: translateY(-2px);
+}
+
+button:active {
+    transform: translateY(0);
+}
+
+button.submit {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+button.reset {
+    background-color: var(--secondary-color);
+    color: white;
+}
+
+#result {
+    font-size: 18px;
+    margin-top: 20px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+
+@media (max-width: 768px) {
+    #game-container {
+        width: 100%;
+        padding: 20px;
+    }
+}

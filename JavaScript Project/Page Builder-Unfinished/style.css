@@ -1,0 +1,35 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+#toolbar {
+    display: flex;
+    gap: 10px;
+    padding: 10px;
+    background-color: #f4f4f4;
+}
+
+#canvas {
+    border: 1px solid #ccc;
+    margin-top: 10px;
+    padding: 10px;
+    min-height: 300px;
+}
+
+.element {
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ddd;
+}
+
+.text-element {
+    font-size: 16px;
+}
+
+.image-element img {
+    max-width: 100%;
+}
+
+.button-element button {
+    padding: 5px 10px;
+}

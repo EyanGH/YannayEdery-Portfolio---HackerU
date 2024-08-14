@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yu-Gi-Oh! Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <h1>Yu-Gi-Oh! Game</h1>
+
+    <button id="startButton">Start Game</button>
+    <div id="gameBoard">
+
+        <div id="playerField" class="field">
+            <div class="zone monsterZone" id="playerMonsterZone"></div>
+            <div class="zone spellTrapZone" id="playerSpellTrapZone"></div>
+            <div class="deck" id="playerDeck">Deck (40)</div>
+            <div class="graveyard" id="playerGraveyard">Graveyard</div>
+        </div>
+
+
+        <div id="opponentField" class="field">
+            <div class="zone monsterZone" id="opponentMonsterZone"></div>
+            <div class="zone spellTrapZone" id="opponentSpellTrapZone"></div>
+            <div class="deck" id="opponentDeck">Deck (40)</div>
+            <div class="graveyard" id="opponentGraveyard">Graveyard</div>
+        </div>
+    </div>
+
+    <div id="playerHand" class="hand">
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>

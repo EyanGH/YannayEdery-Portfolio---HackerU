@@ -4530,12 +4530,12 @@
   const TAB_NAV_FORWARD = 'forward';
   const TAB_NAV_BACKWARD = 'backward';
   const Default$7 = {
-    autofocus: true,
+
     trapElement: null // The element to trap focus inside of
 
   };
   const DefaultType$7 = {
-    autofocus: 'boolean',
+
     trapElement: 'element'
   };
   /**
